@@ -1,0 +1,7 @@
+{
+  "name": "RevApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
