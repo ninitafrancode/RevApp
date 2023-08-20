@@ -1,0 +1,14 @@
+<ion-content color="light">
+  <app-header color="primary" [IsModal]=true></app-header>
+
+  <app-rating (ratingChange)="getRatingFromStars($event)"></app-rating>
+
+  <app-custom-input [control]="form.controls.description" type="textarea" label="Escribe un comentario"></app-custom-input>
+
+  <div class="ion-text-center">
+    <ion-button (click)="createReview()" class="ion-margin-vertical" type="submit" shape="round" fill="outline">
+      <strong>Publicar </strong>
+      <ion-icon  slot="end" name="paper-plane-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+.avatar-img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // max-width: 200px;
+    // max-height: 200px;
+    --border-radius: 1px;
+}
+
+.starsRating{
+    width: 25px;
+    color: var(--ion-color-primary);
+    padding-right: 10px;
+    // padding-bottom: 5px;
+}
+
+.task-btn{
+    width: 120px
+}
+
+.col-content{
+    margin: auto;
+}
+
+.starsReviews{
+    color: var(--ion-color-primary);
+    padding-right: 5px;
+
+}
+
+.starsRating-card{
+    color: var(--ion-color-primary);
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+
+.items-ion{
+    display: grid;
+    justify-content: center;
+
+}
+
+ion-content{
+    --background: var(--ion-color-primary-contrast);
+    --color: var(--ion-color-primary);
+    height: 100vh;
+    
+}
+

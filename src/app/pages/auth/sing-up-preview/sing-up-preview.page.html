@@ -1,0 +1,24 @@
+<ion-content>
+  <app-header backButton="/auth"></app-header>
+  <app-logo></app-logo>
+  <h2 class="ion-text-center ion-no-margin">Escoge el tipo de usuario a registrar</h2>
+  <div class="content">
+    <div class="d-flex-center">
+
+      <div class="sign-up">
+        <ion-button routerLink="../sing-up-persons" class="ion-margin-vertical" fill="clear" size="large" shape="round">
+          Personas
+          <ion-icon slot="end" name="people-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div class="sign-up">
+        <ion-button routerLink="../sing-up-companies" class="ion-margin-vertical" fill="clear" size="large" shape="round">
+          Empresas
+          <ion-icon slot="end" name="storefront-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>

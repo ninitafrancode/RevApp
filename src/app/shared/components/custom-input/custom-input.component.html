@@ -1,0 +1,38 @@
+<!-- Input regular -->
+<ion-item *ngIf="type !== 'textarea'" class="ion-margin-vertical">
+  <ion-icon color ="primary" *ngIf="icon" slot="start" [name]="icon"></ion-icon>
+  
+  <ion-label position="floating" >{{label}}</ion-label>
+  <p *ngIf="newFile">{{newFile.name}}</p>
+  
+
+  <ion-input debounce="500" [autocomplete]="autocomplete" [type]="type" [formControl]="control"></ion-input>
+
+  <ion-buttons *ngIf="isPassword" slot="end">
+    <ion-button (click)="showOrHidePassword()">
+      <ion-icon [name]="hide ? 'eye-outline' : 'eye-off-outline'"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-buttons *ngIf="isImage" slot="end">
+    <ion-button>
+      <label for="file-upload">
+        <ion-icon name="camera-outline"></ion-icon>
+      </label>
+      <input (change)="imageUpload($event)" id ="file-upload" type="file" accept="image/*" style="display:none">
+    </ion-button>
+  </ion-buttons>
+
+  <ion-select *ngIf="type === 'select'" slot="end" [formControl]="control" interface="popover" placeholder="Escoge una categoria">
+    <ion-select-option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</ion-select-option>
+  </ion-select>
+
+</ion-item>
+
+<!-- Text Area -->
+<ion-item *ngIf="type == 'textarea'" class="ion-margin-vertical">
+  <ion-label position="floating" >{{label}}</ion-label>
+  <ion-textarea auto-grow="true" debounce="500"
+  [formControl]="control"></ion-textarea>
+</ion-item>
+

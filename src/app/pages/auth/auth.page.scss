@@ -1,0 +1,27 @@
+.sign-up{
+    padding: 100px
+    
+}
+
+h1{
+    font-size: 15px;
+}
+
+ion-button{
+    width: 150px;
+}
+
+.text-button{
+    text-transform: lowercase;
+    font-size: 10px;
+}
+
+
+
+
+@media (min-width: 769px){
+    form{
+        width:500px; 
+        padding: 50px 10px;
+    }
+}

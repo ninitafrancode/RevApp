@@ -1,0 +1,17 @@
+ion-avatar{
+    width: 200px;
+    height: 200px;
+}
+
+ion-button{
+    margin-top: 50px;    
+}
+
+.center-img{
+    display: flex;
+    justify-content: center;
+}
+
+.capitalized::first-letter {
+    text-transform: capitalize;
+}

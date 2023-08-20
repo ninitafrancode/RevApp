@@ -24,3 +24,60 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+ion-content{
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+    
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background: var(--ion-color-light);
+    color: var(--ion-color-light-contrast);
+    border-radius: 20px 20px 0 0;
+    margin-top: 5vh;
+    padding: 15px 0;
+
+    box-shadow: -1px -7px 40px -16px rgba(0,0,0,0.35);
+    -webkit-box-shadow: -1px -7px 40px -16px rgba(0,0,0,0.35);
+    -moz-box-shadow: -1px -7px 40px -16px rgba(0,0,0,0.35);
+}
+
+h2{
+    font-size: 25px;
+}
+
+ion-item{
+    --background: transparent;
+}
+ion-button{
+    text-transform: capitalize;
+}
+
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-review-modal{
+    --height: 95%;
+    --border-radius: 20px;
+
+}
+
+
+@media screen and (max-width: 740px){
+
+    content{
+        height: 100%;
+    }
+    
+    .add-review-modal{
+        --height: 100%;
+        --border-radius: 0;    
+    }
+}
